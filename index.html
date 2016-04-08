@@ -1,36 +1,37 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
--->
 <html>
 	<head>
 		<title>Peter Richards</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/homepage.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/title.css" />
 	</head>
-	<body>
-
-			<header id="header">
-				<h1>
-					Peter Richards
-				</h1>
-				<br>
-				<ul class="icons">
-					<li><a href="/photography.html" class="button icon icon-after fa-chevron-right">Photography</a></li> <br><br>
-					<li><a href="http://frigat.es/" class="button icon icon-after fa-chevron-right">Frigat.es</a></li> <br><br>
-					<li><a href="mailto:ahoy@frigat.es" class="button icon icon-after fa-chevron-right">Contact</a></li> <br><br>
-				</ul>
-			</header>
-		
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/homepage.js"></script>
-
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1>Peter Richards</h1>
+						<p>Washington, D.C. || New York City</p>
+						<p>Columbia University 2018 || St. Albans 2014</p>
+                                                <nav>
+							<ul>
+                                                                <h2>Photography:</h2>
+                                                                <li><a href="photography.html" class="icon fa-camera-retro"<span class="label"></span></a></li>
+                                                                <h2>Frigates:</h2> 
+								<li><a href="http://frigat.es" class="icon fa-ship"><span class="label"></span></a></li>
+                                                                <h2>Contact:</h2> 
+								<li><a href="mailto:ahoy@frigat.es" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                                                        </ul>
+						</nav>
+					</header>
+				</div>
+			</div>
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
